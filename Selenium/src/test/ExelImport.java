@@ -35,7 +35,7 @@ public class ExelImport {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
-		String filePath = System.getProperty("user.dir")+"\\src\\TestData.xlsx";
+		String filePath = System.getProperty("user.dir")+"\\Resources\\TestData.xlsx";
 		File file = new File(filePath);
 		FileInputStream inputstream = new FileInputStream(file);
 		Workbook myworkbook = new XSSFWorkbook(inputstream);
