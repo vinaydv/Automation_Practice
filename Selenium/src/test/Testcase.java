@@ -17,10 +17,10 @@ public class Testcase {
 	
 	@BeforeTest
 	public void setup(){
-		System.setProperty("webdriver.chrome.driver","C:/Users/vdv/Downloads/chromedriver_2.33/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "/Drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("http://www.phptravels.com");
+		driver.get("http://www.flipkart.com");
 		driver.manage().window().maximize();
 	}
 	
